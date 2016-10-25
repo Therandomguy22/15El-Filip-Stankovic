@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Tärning {
+	
+	public static void main(String [] args) {
+		int datortarning;
+		int spelartarning;
+		
+		System.out.println("Tärningsspel!");
+		System.out.println("Du vinner om ditt tärningskast är högre än datorn");
+		
+		datortarning = (int)( Math.random() *6 )+1;
+		
+		System.out.print("Skriv in ett tal 1-6: ");
+		
+		Scanner in = new Scanner(System.in);
+		
+		if (spelartarning > datortarning)
+			System.out.println("Du vann!");
+		else
+			System.out.println("RIP");
+	}
+}
